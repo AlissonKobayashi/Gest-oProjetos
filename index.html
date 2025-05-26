@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>IBGE Nomes - SOA</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer src="main.js"></script>
+        <link rel="stylesheet" href="index.css">
+      </head>
+<body>
+  <h1>Análise de Tendência de Nomes no Brasil</h1>
+
+  <section>
+    <h2>1. Evolução de um Nome</h2>
+    <input id="nomeInput" placeholder="Digite um nome">
+    <button onclick="buscarEvolucaoNome()">Buscar</button>
+    <canvas id="graficoNome"></canvas>
+  </section>
+
+  <section>
+    <h2>2. Top 3 Nomes por Localidade</h2>
+    <input id="ufInput" placeholder="Código da UF (ex: 35)">
+    <button onclick="buscarTop3()">Buscar</button>
+    <table border="1" id="tabelaNomes">
+      <thead><tr><th>Nome</th><th>Frequência</th><th>Ranking</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Comparar Dois Nomes</h2>
+    <input id="nome1" placeholder="Nome 1">
+    <input id="nome2" placeholder="Nome 2">
+    <button onclick="compararNomes()">Comparar</button>
+    <canvas id="graficoComparacao"></canvas>
+  </section>
+</body>
+</html>
